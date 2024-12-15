@@ -6,6 +6,13 @@ export interface UserStats {
     Commits: number;
     'Contributed To': number;
     'Star Earned': number;
+    'Total Contibutions': number;
+    'Longest Streak': number;
+    'Longest Streak Start': string | null;
+    'Longest Streak End': string | null;
+    'Current Streak': number;
+    'Current Streak Start': string | null;
+    'Current Streak End': string | null;
   }
 
   export interface UserData {
@@ -17,9 +24,8 @@ export interface UserStats {
       };
       pullRequests: { totalCount: number };
       issues: { totalCount: number };
-      contributionsCollection: { totalCommitContributions: number };
+      contributionsCollection: { totalCommitContributions: number; contributionYears: string[]; };
       repositoriesContributedTo: { totalCount: number };
     };
   }
-  
   
