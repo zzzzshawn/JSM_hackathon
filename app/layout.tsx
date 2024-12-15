@@ -37,8 +37,8 @@ export default function RootLayout({
             <Image
               src="/assets/gradient.svg"
               alt=""
-              height={2024}
-              width={2024}
+              height={1500}
+              width={1500}
               className="object-cover size-full -z-10 op"
             />
           </div>
