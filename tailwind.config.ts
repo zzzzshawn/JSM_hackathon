@@ -5,6 +5,7 @@ export default {
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./constants/index.ts",
   ],
   theme: {
     extend: {
@@ -16,8 +17,13 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
-        "dark-1": "#909090",
-        "dark-2": "#c3c3c3"
+        "dark-1": "#afafaf",
+        "dark-2": "#dbdbdb",
+      },
+    },
+    variants: {
+      extend: {
+        boxShadow: ["hover", "group-hover"],
       },
     },
   },
