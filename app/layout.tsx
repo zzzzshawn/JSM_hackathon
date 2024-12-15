@@ -37,13 +37,13 @@ export default function RootLayout({
             <Image
               src="/assets/gradient.svg"
               alt=""
-              height={1024}
-              width={1024}
-              className="object-cover size-full -z-10 opacity-[0.9]"
+              height={2024}
+              width={2024}
+              className="object-cover size-full -z-10 op"
             />
           </div>
-          <div className="absolute top-0 left-0 h-full w-1/2 bg-gradient-to-r from-black via-black/30 to-black/0 -z-10"></div>
-          <div className="absolute top-0 right-0 h-full w-1/2 bg-gradient-to-l from-black via-black/30 to-black/0 -z-10"></div>
+          <div className="absolute top-0 left-0 h-full w-1/2 bg-gradient-to-r from-black/100 via-black/30 to-black/0 -z-10"></div>
+          <div className="absolute top-0 right-0 h-full w-1/2 bg-gradient-to-l from-black/100 via-black/30 to-black/0 -z-10"></div>
           {children}
         </main>
       </body>
