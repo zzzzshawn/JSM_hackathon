@@ -5,6 +5,9 @@ import Followers from "./Github Components/Followers";
 import LongestStreak from "./Github Components/LongestStreak";
 import Stars from "./Github Components/Stars";
 import CurrentStreak from "./Github Components/CurrentStreak";
+import Repos from "./Github Components/Repos";
+import TotoalContributions from "./Github Components/TtalContro";
+import Commit from "./Github Components/Commits";
 
 const Github = async () => {
   const username = "zzzzshawn";
@@ -32,10 +35,10 @@ const Github = async () => {
           followers={userStats.Followers}
           classname="col-start-3 col-end-5 row-start-4 row-end-5"
         />
-        {/* <Followers followers={userStats.Followers} classname="col-start-5 col-end-9 row-start-1 row-end-2" />
-        <Followers followers={userStats.Followers} classname="col-start-5 col-end-7 row-start-2 row-end-5" /> */}
-        {/* <Followers followers={userStats.Followers} classname="col-start-7 col-end-8 row-start-2 row-end-4" />
-        <Followers followers={userStats.Followers} classname="col-start-7 col-end-9 row-start-4 row-end-5" /> */}
+        <Repos repos={userStats.Repositories} classname="col-start-5 col-end-9 row-start-1 row-end-2" />
+        <Commit commits={userStats["Total Contibutions"]} classname="col-start-5 col-end-7 row-start-2 row-end-5" />
+        <TotoalContributions total={userStats["Total Contibutions"]} classname="col-start-7 col-end-8 row-start-2 row-end-4" />
+        {/* <Followers followers={userStats.Followers} classname="col-start-7 col-end-9 row-start-4 row-end-5" /> */}
         {/* <Followers followers={userStats.Followers}  classname="col-start-8 col-end-9 row-start-2 row-end-4" /> */}
         <Stars
           stars={userStats["Star Earned"]}
