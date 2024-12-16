@@ -25,7 +25,7 @@ const Followers = ({
         <UserRoundCheck className="size-9" />
         <p className="font-modernbold">Followers</p>
       </div>
-      <p className="font-modernbold absolute bottom-3 right-3 text-5xl">{followers}</p>
+      <p className="font-modernbold absolute bottom-3 right-3 text-7xl">{followers}</p>
     </div>
   );
 };

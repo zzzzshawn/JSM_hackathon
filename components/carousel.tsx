@@ -25,7 +25,7 @@ export default function Carousel() {
         >
           <div
             className={cn(
-              " size-full backdrop-blur-xl border-zinc-500/20 backdrop-saturate-200 border-2 rounded-lg relative hover:border-purple-400/30 shadow-2xl hover:shadow-purple-300/40 group",
+              " size-full backdrop-blur-xl border-zinc-500/20 backdrop-saturate-200 border-2 rounded-lg relative hover:border-purple-400/30 shadow-2xl hover:shadow-purple-300/60 group",
               item.color
             )}
             onClick={() => setActiveIndex(index)}

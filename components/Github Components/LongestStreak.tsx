@@ -25,7 +25,7 @@ const LongestStreak = ({
         />
         <p className="font-modernbold text-lg">Longest Streak</p>
         <Trophy className="size-10"/>
-        <p className="font-modernbold text-6xl">{streak}</p>
+        <p className="font-modernbold text-7xl">{streak}</p>
         <p>{start} - {end}</p>
     </div>
   );
