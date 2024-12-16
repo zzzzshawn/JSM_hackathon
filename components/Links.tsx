@@ -5,7 +5,7 @@ import React from "react";
 
 const Links = () => {
   return (
-    <div className="w-full flex gap-5 justify-center items-center">
+    <div className="w-full max-w-3xl mx-auto flex gap-5 justify-start px-4 items-center">
       {Socials.map((item, idx) => (
         <Link
           href={item.href}

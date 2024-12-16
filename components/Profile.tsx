@@ -4,7 +4,7 @@ import Links from "./Links";
 
 const Profile = () => {
   return (
-    <div className="p-5   w-full">
+    <div className="p-5 max-w-2xl mx-auto  w-full">
       <div className="flex gap-3  p-2 group cursor-pointer">
         <Image
           src={`/assets/pfp.png`}
@@ -14,7 +14,7 @@ const Profile = () => {
           className="size-20 rounded-full shadow-xl group-hover:shadow-cyan-200/80 transition-all"
         />
         <div className="">
-          <p className="font-bold text-5xl font-modernbold">Shawn.</p>
+          <p className="font-bold text-5xl font-modernbold text-white">Shawn.</p>
           <p className="font-modernmono text-lg text-dark-1">
             @zzzzshawn
           </p>

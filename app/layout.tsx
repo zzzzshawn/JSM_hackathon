@@ -32,7 +32,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${modernBold.variable} ${modernMono.variable} ${modernReg.variable} antialiased bg-black`}>
-        <main className="w-[80%]  mx-auto relative min-h-screen">
+        <main className="w-[80%] mx-auto relative min-h-screen">
           <div className="pointer-events-none absolute inset-0 w-full mx-auto -z-10">
             <Image
               src="/assets/gradient.svg"
