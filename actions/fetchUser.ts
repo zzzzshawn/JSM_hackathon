@@ -59,8 +59,7 @@ const fetchUser = async (
   const response = await graphQL({ query, variables: { username: username } });
 
   const data: UserData = response;
-  console.log(data);
-
+  
   const contibutonYears = data.user.contributionsCollection.contributionYears;
   let allContributionDays: { date: string; contributionCount: number }[] = [];
 
