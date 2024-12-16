@@ -30,3 +30,10 @@ export const Socials = [
     className: "group-hover:border-lime-400/50 bg-black p-2 border-lime-400/30 group-hover:shadow-lime-400/70",
   },
 ];
+
+
+export const projects = [
+  { id: 3, content: "/assets/ms.png", color: "bg-zinc-700/40", title: "Millennial Studio", desc: "A landing page for a local clothing store"  },
+  { id: 2, content: "/assets/socialz.png", color: "bg-zinc-700/40", title: "Socialzz", desc: "A photo sharing social media platform" },
+  { id: 1, content: "/assets/rotos.png", color: "bg-zinc-700/40", title: "Rotos", desc: "Questionnaire platform" },
+];

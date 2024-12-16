@@ -3,32 +3,29 @@
 import { useState } from "react";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
+import { projects } from "@/constants";
 
 export default function Carousel() {
   const [activeIndex, setActiveIndex] = useState(0);
 
-  const items = [
-    { id: 3, content: "/assets/ms.png", color: "bg-zinc-700/40", title: "Millennial Studio", desc: "A landing page for a local clothing store"  },
-    { id: 2, content: "/assets/socialz.png", color: "bg-zinc-700/40", title: "Socialzz", desc: "A photo sharing social media platform" },
-    { id: 1, content: "/assets/rotos.png", color: "bg-zinc-700/40", title: "Rotos", desc: "Questionnaire platform" },
-  ];
+
 
   return (
     <div className="flex space-x-2 w-full relative h-[600px]">
-      {items.map((item, index) => (
+      {projects.map((item, index) => (
         <div
           key={item.id}
-          className={`h-full transition-all duration-300 ease-in-out flex flex-col gap-5 items-center justify-center  text-white  cursor-pointer ${
+          className={`h-full transition-all duration-200 ease-in-out flex flex-col gap-5 items-center justify-center  text-white  cursor-pointer ${
             index === activeIndex
               ? "w-[80%] max-h-[420px]"
               : index === 0 && activeIndex !== 0
               ? "w-[15%] max-h-[420px]"
               : "w-[15%] max-h-[420px]"
-          } group`}
+          } `}
         >
           <div
             className={cn(
-              " size-full backdrop-blur-xl border-zinc-500/20 backdrop-saturate-200 border-2 rounded-lg relative group-hover:border-purple-400/30 shadow-2xl group-hover:shadow-purple-300/40",
+              " size-full backdrop-blur-xl border-zinc-500/20 backdrop-saturate-200 border-2 rounded-lg relative hover:border-purple-400/30 shadow-2xl hover:shadow-purple-300/40 group",
               item.color
             )}
             onClick={() => setActiveIndex(index)}
