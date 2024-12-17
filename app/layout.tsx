@@ -32,7 +32,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${modernBold.variable} ${modernMono.variable} ${modernReg.variable} antialiased bg-black`}>
-        <main className="w-[80%] mx-auto relative min-h-screen">
+        <main className="min-h-screen relative w-full">
           <div className="pointer-events-none absolute inset-0 w-full mx-auto -z-10">
             <Image
               src="/assets/gradient.svg"
@@ -42,8 +42,8 @@ export default function RootLayout({
               className="object-cover size-full -z-10 op"
             />
           </div>
-          <div className="absolute top-0 left-0 h-full w-1/2 bg-gradient-to-r from-black/100 via-black/30 to-black/0 -z-10"></div>
-          <div className="absolute top-0 right-0 h-full w-1/2 bg-gradient-to-l from-black/100 via-black/30 to-black/0 -z-10"></div>
+          <div className="absolute top-0 left-0 h-full w-1/2 bg-gradient-to-r from-black/100 via-black/50 to-black/0 -z-10"></div>
+          <div className="absolute top-0 right-0 h-full w-1/2 bg-gradient-to-l from-black/100 via-black/50 to-black/0 -z-10"></div>
           {children}
         </main>
       </body>

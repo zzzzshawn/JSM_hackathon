@@ -17,10 +17,10 @@ export default function Carousel() {
           key={item.id}
           className={`h-full transition-all duration-200 ease-in-out flex flex-col gap-5 items-center justify-center  text-white  cursor-pointer ${
             index === activeIndex
-              ? "w-[80%] max-h-[420px]"
+              ? "w-[80%] max-h-[420px] max-md:max-h-[350px]"
               : index === 0 && activeIndex !== 0
-              ? "w-[15%] max-h-[420px]"
-              : "w-[15%] max-h-[420px]"
+              ? "w-[15%] max-h-[420px] max-md:max-h-[350px]"
+              : "w-[15%] max-h-[420px] max-md:max-h-[350px]"
           } `}
         >
           <div
@@ -47,7 +47,7 @@ export default function Carousel() {
               }`}
             />
           </div>
-          <div className={`absolute bottom-12 left-0 px-16 h-32 max-h-32  ${
+          <div className={`absolute bottom-12 max-md:bottom-28 left-0 px-16 h-32 max-h-32  ${
               index === activeIndex
                 ? "opacity-100"
                 : index === 0 && activeIndex !== 0
@@ -55,7 +55,7 @@ export default function Carousel() {
                 : "opacity-0"
             } flex gap-10 w-full items-start justify-between`}
           >
-            <div className="font-modernbold text-5xl text-nowrap ">
+            <div className="font-modernbold text-5xl w-1/2  ">
             {item.title}
             </div>
             <div className="text-wrap max-w-[60%] font-modernreg text-xl text-right pt-5 h-full overflow-hidden">{item.desc}</div>

@@ -25,7 +25,7 @@ const PRs = ({ pr, classname }: { pr: number; classname: string }) => {
         PRs
         </p>
       </div>
-      <p className="font-modernbold absolute bottom-5 right-5 text-7xl">
+      <p className="font-modernbold absolute bottom-5 right-3 text-7xl">
         {pr}
       </p>
     </div>

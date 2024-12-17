@@ -18,8 +18,8 @@ const Github = async () => {
   const graph = await fetchGraph(username);
 
   return (
-    <div className="text-white w-full">
-      <h1 className="font-modernbold text-5xl max-w-3xl py-5 px-40">Github.</h1>
+    <div className="text-white w-full lg:w-[90%] mx-auto flex items-start justify-start flex-col p-3">
+      <h1 className="font-modernbold text-5xl max-w-2xl py-5 px-7">Github.</h1>
       <div className="grid grid-cols-8 grid-rows-4 gap-2 w-full h-[500px]  ">
         <LongestStreak
           streak={userStats["Longest Streak"]}
@@ -69,7 +69,7 @@ const Github = async () => {
           </h1>
         </div>
         <div
-          className="max-w-2xl bg-zinc-900/60 backdrop-blur-xl border border-zinc-200/20 backdrop-saturate-200 p-3 rounded-2xl mx-auto"
+          className="max-w-2xl bg-zinc-900/60 backdrop-blur-xl border border-zinc-200/20 backdrop-saturate-200 p-3 rounded-2xl mx-auto overflow-hidden"
           dangerouslySetInnerHTML={{
             __html: graph.graph,
           }}

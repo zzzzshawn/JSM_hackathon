@@ -4,7 +4,7 @@ import Links from "./Links";
 
 const Profile = () => {
   return (
-    <div className="p-5 max-w-2xl mx-auto  w-full">
+    <div className="p-5 max-w-2xl mx-auto w-full">
       <div className="flex gap-3  p-2 group cursor-pointer">
         <Image
           src={`/assets/pfp.png`}
