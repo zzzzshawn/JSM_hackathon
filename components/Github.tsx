@@ -10,6 +10,7 @@ import Commit from "./Github Components/Commits";
 import PRs from "./Github Components/PRs";
 import Issues from "./Github Components/Issues";
 import ContributedTo from "./Github Components/ContributedTo";
+import Image from "next/image";
 
 const Github = async () => {
   const username = "zzzzshawn";
@@ -62,18 +63,27 @@ const Github = async () => {
           classname="col-start-1 col-end-3 row-start-3 row-end-5"
         />
       </div>
-      <div className=" p-2 rounded-2xl max-w-3xl mx-auto mt-2 flex flex-col relative">
+      <div className=" p-2 px-5 rounded-3xl max-w-3xl mx-auto mt-2 flex flex-col relative">
         <div className="">
           <h1 className="max-w-2xl mx-auto font-modernbold text-2xl mb-2">
             Contribution Graph:
           </h1>
         </div>
-        <div
-          className="max-w-2xl bg-zinc-900/60 backdrop-blur-xl border border-zinc-200/20 backdrop-saturate-200 p-3 rounded-2xl mx-auto overflow-hidden"
-          dangerouslySetInnerHTML={{
-            __html: graph.graph,
-          }}
-        ></div>
+        <div className="relative">
+          <Image
+            src={`/assets/grad10.svg`}
+            alt=""
+            width={1024}
+            height={1024}
+            className="size-full object-cover object-bottom absolute inset-0 -z-10  rounded-3xl opacity-60"
+          />
+          <div
+            className="max-w-2xl bg-zinc-900/60 backdrop-blur-md border border-zinc-200/20 backdrop-saturate-200 p-3 rounded-2xl mx-auto "
+            dangerouslySetInnerHTML={{
+              __html: graph.graph,
+            }}
+          ></div>
+        </div>
       </div>
     </div>
   );

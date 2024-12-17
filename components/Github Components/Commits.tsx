@@ -23,7 +23,7 @@ const Commit = ({
       />
       <div className="absolute top-5 left-5">
         <Command className="size-10" />
-        <p className="font-modernbold text-xl pt-1">Total <br/> Commits</p>
+        <p className="font-modernbold lg:text-xl pt-1">Total <br/> Commits</p>
       </div>
       <p className="font-modernbold absolute bottom-5 right-5 text-7xl">
         {commits}

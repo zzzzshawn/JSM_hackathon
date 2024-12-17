@@ -20,7 +20,7 @@ const ContributedTo = ({
         height={1024}
         className="size-full object-cover absolute inset-0 -z-10 rounded-2xl opacity-80"
       />
-      <div className="absolute top-5 left-5">
+      <div className="absolute top-3 left-3 max-lg:flex gap-2" >
         <Image
           src={`/icons/pr.svg`}
           alt=""
@@ -28,9 +28,9 @@ const ContributedTo = ({
           height={100}
           className="size-10"
         />
-        <p className="font-modernbold text-xl pt-1">Contributed To:</p>
+        <p className="font-modernbold lg:text-xl pt-2">Contributed <br/> To:</p>
       </div>
-      <p className="font-modernbold absolute bottom-5 right-5 text-7xl">{contros}</p>
+      <p className="font-modernbold absolute bottom-5 right-3 text-7xl max-lg:text-5xl">{contros}</p>
     </div>
   );
 };

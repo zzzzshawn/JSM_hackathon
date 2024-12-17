@@ -17,7 +17,7 @@ const Repos = ({ repos, classname }: { repos: number; classname: string }) => {
       />
       <div className="absolute top-5 left-5">
         <BookMarked className="size-10" />
-        <p className="font-modernbold text-xl pt-1">Repositories</p>
+        <p className="font-modernbold lg:text-xl pt-1">Repositories</p>
       </div>
       <p className="font-modernbold absolute bottom-5 right-5 text-7xl">
         {repos}

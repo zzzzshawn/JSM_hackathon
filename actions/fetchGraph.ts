@@ -37,7 +37,7 @@ const fetchGraph = async (username: string): Promise<{ graph: string }> => {
     const svgWidth = numWeeks * (dayWidth + weekPadding) + 2 * svgPadding;
 
     function getFillColor(count: number): string {
-      if (count === 0) return "#191919"; 
+      if (count === 0) return "#00000090"; 
       if (count <= 5) return "#0E4429"; 
       if (count <= 10) return "#006D32";
       if (count <= 20) return "#26A641";

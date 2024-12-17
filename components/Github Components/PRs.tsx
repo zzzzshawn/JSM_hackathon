@@ -14,18 +14,18 @@ const PRs = ({ pr, classname }: { pr: number; classname: string }) => {
         height={1024}
         className="size-full object-cover absolute inset-0 -z-10 rounded-2xl opacity-80"
       />
-      <div className="absolute top-5 left-5">
+      <div className="absolute top-3 left-3">
         <Image
         src={`/icons/pr.svg`}
         alt=""
         width={100}
         height={100}
         className="size-10" />
-        <p className="font-modernbold text-xl pt-1">
+        <p className="font-modernbold lg:text-xl pt-1">
         PRs
         </p>
       </div>
-      <p className="font-modernbold absolute bottom-5 right-3 text-7xl">
+      <p className="font-modernbold absolute bottom-5 right-3 text-7xl max-lg:text-5xl">
         {pr}
       </p>
     </div>
