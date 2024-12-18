@@ -17,5 +17,6 @@ model Blog {
   id        Int      @id @default(autoincrement())
   title     String
   content   String
+  description String 
   createdAt DateTime @default(now())
 }

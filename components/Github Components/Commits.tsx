@@ -17,8 +17,8 @@ const Commit = ({
       <Image
         src={`/assets/grad2.svg`}
         alt=""
-        width={1024}
-        height={1024}
+        width={500}
+        height={500}
         className="size-full object-cover absolute inset-0 -z-10 rounded-2xl opacity-80"
       />
       <div className="absolute top-5 left-5 max-sm:left-1">

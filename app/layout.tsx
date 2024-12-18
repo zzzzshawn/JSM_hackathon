@@ -40,9 +40,10 @@ export default function RootLayout({
             <Image
               src="/assets/gradient.svg"
               alt=""
-              height={1024}
-              width={1024}
-              className="object-cover size-full -z-10 op"
+              height={200}
+              width={200}
+              className="object-cover size-full -z-10"
+              priority
             />
           </div>
           <div className=" absolute top-0 left-0 h-full w-1/2 bg-gradient-to-r from-black/100 via-black/50 to-black/0 -z-10"></div>

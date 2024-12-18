@@ -38,8 +38,8 @@ export default function Carousel() {
             <Image
               src={item.content}
               alt=""
-              width={2024}
-              height={2024}
+              width={600}
+              height={600}
               className={`absolute inset-0 h-[96%] w-[98%]  rounded-lg opacity-90 m-auto object-cover ${
                 index === activeIndex
                   ? "rounded-lg"

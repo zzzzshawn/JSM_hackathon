@@ -5,14 +5,23 @@ const nextConfig: NextConfig = {
   images: {
     remotePatterns: [
       {
-        protocol: 'https', // Allow secure images
-        hostname: '**',    // Match all hostnames
+        protocol: 'https',
+        hostname: '**',
       },
       {
-        protocol: 'http',  // Allow non-secure images (optional)
-        hostname: '**',    // Match all hostnames
+        protocol: 'http',
+        hostname: '**',
       },
     ],
+  },
+  async redirects() {
+    return [
+      {
+        source: '/',        // Source path
+        destination: '/home', // Destination path
+        permanent: true,    // Permanent redirect (301)
+      },
+    ];
   },
 };
 

@@ -11,8 +11,8 @@ const Stars = ({ classname, stars }: { classname: string; stars: number }) => {
       <Image
         src={`/assets/grain.svg`}
         alt=""
-        width={1024}
-        height={1024}
+        width={500}
+        height={500}
         className="size-full object-cover absolute inset-0 -z-10 rounded-2xl opacity-70"
       />
       <div className="absolute top-5 left-5">

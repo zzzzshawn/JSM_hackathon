@@ -17,8 +17,8 @@ const Followers = ({
       <Image
         src={`/assets/frame2.png`}
         alt=""
-        width={1024}
-        height={1024}
+        width={500}
+        height={500}
         className="size-full object-cover absolute inset-0 -z-10 rounded-2xl opacity-80"
       />
       <div className="absolute top-3 left-3">

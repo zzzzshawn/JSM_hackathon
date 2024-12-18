@@ -21,8 +21,8 @@ const CurrentStreak = ({
       <Image
         src={`/assets/frame9.svg`}
         alt=""
-        width={1024}
-        height={1024}
+        width={500}
+        height={500}
         className="size-full object-cover absolute inset-0 top-1 -z-10 rounded-2xl"
       />
       <div className="relative items-center justify-center">
