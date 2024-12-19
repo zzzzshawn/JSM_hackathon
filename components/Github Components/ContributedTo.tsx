@@ -28,7 +28,7 @@ const ContributedTo = ({
           height={100}
           className="size-10"
         />
-        <p className="font-modernbold lg:text-xl pt-2">Contrib<span className="sm:hidden">-</span> uted <br/> To:</p>
+        <p className="font-modernbold lg:text-lg pt-2 lg:pt-0">Contrib<span className="sm:hidden">-</span> uted <br/> To:</p>
       </div>
       <p className="font-modernbold absolute bottom-5 right-3 text-7xl max-lg:text-5xl">{contros}</p>
     </div>
