@@ -5,7 +5,7 @@ import React from "react";
 const Stars = ({ classname, stars }: { classname: string; stars: number }) => {
   return (
     <div
-      className={`${classname} flex items-start flex-col gap-3 relative rounded-2xl overflow-hidden p-5 -z-10 bg-black/90`}
+      className={`${classname} flex items-start flex-col gap-3 relative rounded-3xl overflow-hidden p-5  bg-black/90  z-[90]  group cursor-pointer`}
     >
       {/* <HalfCircleGradient  /> */}
       <Image
@@ -13,7 +13,7 @@ const Stars = ({ classname, stars }: { classname: string; stars: number }) => {
         alt=""
         width={500}
         height={500}
-        className="size-full object-cover absolute inset-0 -z-10 rounded-2xl opacity-70"
+        className="size-full object-cover absolute inset-0 -z-10 rounded-2xl opacity-70 group-hover:opacity-90"
       />
       <div className="absolute top-5 left-5">
         <StarsIcon className="size-14  " />

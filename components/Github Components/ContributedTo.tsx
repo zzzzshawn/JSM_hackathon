@@ -10,15 +10,15 @@ const ContributedTo = ({
 }) => {
   return (
     <div
-      className={`${classname} flex items-center justify-center flex-col gap-3 relative rounded-2xl overflow-hidden -z-10 bg-black/90`}
+      className={`${classname} flex items-center justify-center flex-col gap-3 relative rounded-3xl overflow-hidden bg-black/90  z-[90]  group cursor-pointer`}
     >
       {/* <HalfCircleGradient  /> */}
       <Image
-        src={`/assets/grad5.svg`}
+        src={`/assets/grad11.svg`}
         alt=""
         width={500}
         height={500}
-        className="size-full object-cover absolute inset-0 -z-10 rounded-2xl opacity-80"
+        className="size-full object-cover absolute inset-0 -z-10 rounded-xl opacity-70 group-hover:opacity-100 object-left-bottom"
       />
       <div className="absolute top-3 left-3 max-lg:flex max-md:block gap-2" >
         <Image

@@ -10,7 +10,7 @@ const Issues = ({
 }) => {
   return (
     <div
-      className={`${classname} flex items-center justify-center flex-col gap-3 relative rounded-2xl overflow-hidden -z-10 bg-black/90`}
+      className={`${classname} flex items-center justify-center flex-col gap-3 relative rounded-3xl overflow-hidden bg-black/90 z-[90]  group cursor-pointer`}
     >
       {/* <HalfCircleGradient  /> */}
       <Image
@@ -18,7 +18,7 @@ const Issues = ({
         alt=""
         width={500}
         height={500}
-        className="size-full object-cover absolute inset-0 -z-10 rounded-2xl opacity-80"
+        className="size-full object-cover absolute inset-0 -z-10 rounded-2xl opacity-[0.75] group-hover:opacity-90"
       />
       <div className="absolute top-3 left-3">
         <Image

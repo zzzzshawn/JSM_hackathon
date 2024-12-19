@@ -35,7 +35,7 @@ const Github = async () => {
         />
         <Followers
           followers={userStats.Followers}
-          classname="md:col-start-3 md:col-end-5 md:row-start-4 md:row-end-5"
+          classname="md:col-start-7 md:col-end-9 md:row-start-4 md:row-end-5 row-start-4 row-end-4 col-start-2 col-end-3"
         />
         <Repos
           repos={userStats.Repositories}
@@ -51,7 +51,7 @@ const Github = async () => {
         />
         <ContributedTo
           contros={userStats["Contributed To"]}
-          classname="md:col-start-7 md:col-end-9 md:row-start-4 md:row-end-5 row-start-4 row-end-4 col-start-2 col-end-3"
+          classname="md:col-start-3 md:col-end-5 md:row-start-4 md:row-end-5"
         />
         <Issues
           issues={userStats.Issues}
@@ -67,10 +67,10 @@ const Github = async () => {
           Contribution Graph:
         </h1>
       </div>
-      <div className=" px-5 rounded-2xl w-full mx-auto flex flex-col relative overflow-auto">
+      <div className=" px-5 rounded-2xl w-full mx-auto flex flex-col relative overflow-auto  ">
         <div className="relative max-w-2xl mx-auto">
           <div
-            className=" bg-zinc-800/20 backdrop-blur-2xl border border-zinc-200/10 backdrop-saturate-200 p-3 rounded-2xl mx-auto overflow-auto max-w-2xl"
+            className=" bg-zinc-800/20 backdrop-blur-2xl border border-zinc-200/10 backdrop-saturate-200 p-3 rounded-2xl mx-auto overflow-auto max-w-2xl opacity-95 hover:opacity-100 z-[9999] cursor-pointer "
             dangerouslySetInnerHTML={{
               __html: graph.graph,
             }}
