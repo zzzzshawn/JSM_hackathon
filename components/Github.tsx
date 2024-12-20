@@ -10,9 +10,10 @@ import Commit from "./Github Components/Commits";
 import PRs from "./Github Components/PRs";
 import Issues from "./Github Components/Issues";
 import ContributedTo from "./Github Components/ContributedTo";
+import { person } from "@/constants";
 
 const Github = async () => {
-  const username = "zzzzshawn";
+  const username = person.github;
   const { userStats } = await fetchUser(username);
   console.log(userStats);
   const graph = await fetchGraph(username);

@@ -1,6 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import Links from "./Links";
+import { person } from "@/constants";
 
 const Profile = () => {
   return (
@@ -14,13 +15,13 @@ const Profile = () => {
           className="size-20 rounded-full shadow-xl group-hover:shadow-cyan-200/80 transition-all"
         />
         <div className="">
-          <p className="font-bold text-5xl font-modernbold text-white">Shawn.</p>
+          <p className="font-bold text-5xl font-modernbold text-white">{person.name}</p>
           <p className="font-modernmono text-lg text-dark-1">
-            @zzzzshawn
+            {person.username}
           </p>
         </div>
       </div>
-        <p className="text-lg lg:text-xl text-dark-2 mt-5 w-[95%] mx-auto">Sharing my journey of building impactful products, refining my craft as a developer, and navigating the ever-evolving tech industry</p>
+        <p className="text-lg lg:text-xl text-dark-2 mt-5 w-[95%] mx-auto">{person.desc}</p>
 
         <div className="mt-10">
             <Links/>
