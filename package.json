@@ -5,12 +5,10 @@
   "type": "module",
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "prisma generate && next build",
     "start": "next start",
     "lint": "next lint",
-    "seed": "ts-node prisma/seed.js",
-    "postinstall": "prisma generate"
-
+    "seed": "ts-node prisma/seed.js"
   },
   "dependencies": {
     "@prisma/client": "^6.1.0",
