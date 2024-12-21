@@ -15,9 +15,9 @@ const Profile = () => {
           className="size-20 rounded-full shadow-xl group-hover:shadow-cyan-200/80 transition-all"
         />
         <div className="">
-          <p className="font-bold text-5xl font-modernbold text-white">{person.name ?? "Shawn."}</p>
+          <p className="font-bold text-5xl font-modernbold text-white">{person.name}</p>
           <p className="font-modernmono text-lg text-dark-1">
-            {person.username ?? "@zzzzshawn"}
+            {person.username}
           </p>
         </div>
       </div>
