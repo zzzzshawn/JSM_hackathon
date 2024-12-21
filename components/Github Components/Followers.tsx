@@ -15,7 +15,7 @@ const Followers = ({
     >
       {/* <HalfCircleGradient  /> */}
       <Image
-        src={`/assets/frame2.png`}
+        src={`/assets/frame2.svg`}
         alt=""
         width={500}
         height={500}
