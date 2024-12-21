@@ -15,7 +15,6 @@ import { person } from "@/constants";
 const Github = async () => {
   const username = person.github || "zzzzshawn";
   const { userStats } = await fetchUser(username);
-  console.log(userStats);
   const graph = await fetchGraph(username);
 
   return (

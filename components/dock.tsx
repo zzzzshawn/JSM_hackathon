@@ -5,7 +5,7 @@ import { Book, GalleryHorizontal, Home } from "lucide-react";
 
 const Dock = () => {
   const tabs = [
-    { title: "Home", icon: Home , href: "/"},
+    { title: "Home", icon: Home , href: "/home"},
     { title: "Blog", icon: Book, href: "/blog" },
     { type: "separator" },
     { title: "Gallery", icon: GalleryHorizontal, href: "/gallery" },
