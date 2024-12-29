@@ -7,8 +7,8 @@ Follow these steps to install and run the project locally.
 ### Clone the Repository
 
 ```bash
-git clone https://github.com/zzzzshawn/JSM_hackathon.git
-cd JSM_hackathon
+git clone https://github.com/zzzzshawn/template-s
+cd template-s
 ```
 
 ### Install Dependencies
